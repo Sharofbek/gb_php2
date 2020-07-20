@@ -16,6 +16,11 @@ class Phone extends Product
 class Car extends Product
 {
 	private $doors;
+	/**
+     * consturctor for class Product
+     * @param string      $name  nomi
+     * @param int|integer $price narxi
+     */
 	public function __construct(string $name = "NoName", int $price = 0, int $doors = 4)
 	{
 		$this->doors = $doors;
@@ -33,6 +38,7 @@ class Car extends Product
 
 $iPhoneX = new Phone("iPhoneX X", 1000);
 $iPhoneX->setBrand('iPhoneX');
+
 $zFlip = new Phone("Samsung Galaxy Z-Flip", 2500);
 $zFlip->setBrand('Samsung');
 echo "<pre>\n";
