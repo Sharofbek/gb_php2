@@ -8,7 +8,11 @@ class Product
     private $price;
     private $brand;
     private $year;
-    
+    /**
+     * consturctor for class Product
+     * @param string      $name  nomi
+     * @param int|integer $price narxi
+     */
     public function __construct(string $name = "NoName", int $price = 0){
         $this->name = $name;
         $this->price = $price;
@@ -17,7 +21,10 @@ class Product
     public function getName(){
     	return $this->name;
     }
-    
+    /**
+     * @var $name string
+     * @return string
+     */
     public function setName($name){
     	return $this->name = $name;
     }
