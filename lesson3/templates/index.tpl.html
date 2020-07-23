@@ -1,0 +1,30 @@
+{% extends 'base.tpl.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block body %}
+	<h1 class="header-sentence">
+	    Simple gallery
+	</h1>
+	<div class="container-all">
+	    {% for image in images %}
+		    <div class="container">
+		        <a onclick="counter({{image.id}})" href="single.php?id={{ image.id }}" target="_blank">
+		            <img alt="" src="{{ image.path }}">
+		                <span class="title">
+		                    {{ image.title }}
+		                </span>
+		                <!-- <span class="text">
+		                    {{ image.text }}
+		                </span> -->
+		                <span class="author">
+		                    {{ image.author }}
+		                </span>
+		                <!-- <span class="seen" id="seen{{image.id}}">
+		                    <svg style='margin-top: 2px;' xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 16 24"><path fill="white" d="M15 12c0 1.654-1.346 3-3 3s-3-1.346-3-3 1.346-3 3-3 3 1.346 3 3zm9-.449s-4.252 8.449-11.985 8.449c-7.18 0-12.015-8.449-12.015-8.449s4.446-7.551 12.015-7.551c7.694 0 11.985 7.551 11.985 7.551zm-7 .449c0-2.757-2.243-5-5-5s-5 2.243-5 5 2.243 5 5 5 5-2.243 5-5z"/></svg>11111111111
+		                </span> -->
+		        </a>
+		    </div>
+	    {% endfor %}
+	</div>
+{% endblock %}
