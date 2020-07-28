@@ -1,0 +1,13 @@
+{% extends 'base.tpl.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block body %}
+	<h1 class="header-sentence">
+	    Simple gallery / Single Image page
+	</h1>
+	<div class="container-all">
+	    <img alt="" src="{{ image.path }}">
+	</div>
+	</div>
+{% endblock %}
