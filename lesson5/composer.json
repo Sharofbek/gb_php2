@@ -1,0 +1,11 @@
+{
+	"autoload":{
+		"psr-4":{
+			"App\\":"app/"
+		}
+	},
+	"require": {
+		"fzaninotto/faker": "^1.9",
+		"twig/twig": "^3.0"
+	}
+}
