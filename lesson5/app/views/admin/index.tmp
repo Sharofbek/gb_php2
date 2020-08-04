@@ -1,0 +1,10 @@
+{% extends 'base.tmp' %}
+
+{% block content %}
+	<div class="container">
+	    {% for arr in arrs %}
+	        <h2>{{ arr.title }}</h2>
+	        <p>{{ arr.body }}</p>
+	    {% endfor %}
+	</div>
+{% endblock %}
